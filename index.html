@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Swift Lyrics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TAYLOR SWIFT ALBUMS</h1>
+    
+    <!-- Album Grid -->
+    <div id="album-container" class="album-grid">
+        <div class="album" data-album="lover">
+            <img src="albums/lover.jpg" alt="Lover Album Cover">
+            <p class="album-name" style="font-family: 'Pistilli Roman', serif;">Lover</p>
+        </div>
+        <div class="album" data-album="1989">
+            <img src="albums/1989.jpg" alt="1989 Album Cover">
+            <p class="album-name" style="font-family: 'Pistilli Roman', serif;">1989</p>
+        </div>
+        <div class="album" data-album="ttpd">
+            <img src="albums/ttpd.jpg" alt="Tortured Poets Album Cover">
+            <p class="album-name" style="font-family: 'Pistilli Roman', serif;">Tortured Poets Department</p>
+        </div>
+        <div class="album" data-album="fearless">
+            <img src="albums/fearless.jpg" alt="Fearless Album Cover">
+            <p class="album-name" style="font-family: 'Pistilli Roman', serif;">Fearless</p>
+        </div>
+    </div>
+
+    <!-- Song List -->
+    <div id="songs-container" class="hidden">
+        <h2 id="album-title"></h2>
+        <ul id="songs-list">
+            <li data-src="https://drive.google.com/uc?export=download&id=1ZOGSaengvx562arYXqt16uIc_dgMp8qk">Song 1</li>
+            <li data-src="https://drive.google.com/uc?export=download&id=1B0zp1E4C9mgePCfi0326SD6FWQ8FmcN2">Song 2</li>
+            <li data-src="https://drive.google.com/uc?export=download&id=1UzSK0PUMIKNS7YQJ_uBpI6FZS7vO8BUT">Song 3</li>
+            <li data-src="https://drive.google.com/uc?export=download&id=1zcuzV45TYSXsf4O0GUxEJKUoivxJut4L">Song 4</li>
+            <li data-src="https://drive.google.com/uc?export=download&id=1QTC3Ywt8CW2JPdDBRiKTEHDp5u0yeVms">Song 5</li>
+        </ul>
+
+        <!-- Audio Player with Controls -->
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="" type="audio/mpeg">
+        </audio>
+
+        <!-- Lyrics Container -->
+        <div id="lyrics-container"></div>
+
+        <!-- Back Button -->
+        <button onclick="showAllAlbums()">Back to Albums</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
